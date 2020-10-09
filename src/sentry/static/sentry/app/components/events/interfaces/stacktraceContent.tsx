@@ -218,7 +218,7 @@ export default class StacktraceContent extends React.Component<Props, State> {
     return (
       <Wrapper className={className}>
         <StyledPlatformIcon
-          platform={platform || 'other'}
+          platform={platform}
           size="20px"
           style={{borderRadius: '3px 0 0 3px'}}
         />
