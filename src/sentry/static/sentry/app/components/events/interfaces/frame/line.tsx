@@ -183,7 +183,7 @@ export class Line extends React.Component<Props, State> {
     const {isExpanded} = this.state;
 
     return (
-      <ToogleContextButtonWrapper>
+      <ToggleContextButtonWrapper>
         <ToogleContextButton title={t('Toggle Context')} onClick={this.toggleContext}>
           <StyledIconChevron
             isExpanded={!!isExpanded}
