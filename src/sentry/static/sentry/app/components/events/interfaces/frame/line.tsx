@@ -183,13 +183,15 @@ export class Line extends React.Component<Props, State> {
     const {isExpanded} = this.state;
 
     return (
-      <ToogleContextButton title={t('Toggle Context')} onClick={this.toggleContext}>
-        <StyledIconChevron
-          isExpanded={!!isExpanded}
-          direction={isExpanded ? 'up' : 'down'}
-          size="8px"
-        />
-      </ToogleContextButton>
+      <ToogleContextButtonWrapper>
+        <ToogleContextButton title={t('Toggle Context')} onClick={this.toggleContext}>
+          <StyledIconChevron
+            isExpanded={!!isExpanded}
+            direction={isExpanded ? 'up' : 'down'}
+            size="8px"
+          />
+        </ToogleContextButton>
+      </ToogleContextButtonWrapper>
     );
   }
 
@@ -419,6 +421,10 @@ const StyledIconChevron = styled(IconChevron, {
 })<{isExpanded: boolean}>`
   transform: rotate(${p => (p.isExpanded ? '180deg' : '0deg')});
   transition: 0.1s all;
+`;
+
+const ToogleContextButtonWrapper = styled('span')`
+  margin-left: ${space(1)};
 `;
 
 // the Buton's label has the padding of 3px because the button size has to be 16x16 px.
