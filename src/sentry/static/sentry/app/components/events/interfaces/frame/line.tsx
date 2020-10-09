@@ -442,12 +442,8 @@ const StyledListItem = styled(ListItem)`
     flex-shrink: 0;
   }
   :hover {
-    ${PackageStatusIcon} {
-      visibility: visible;
-    }
-    ${AddressToggleIcon} {
-      visibility: visible;
-    }
+    ${PackageStatusIcon},
+    ${AddressToggleIcon},
     ${FunctionNameToggleIcon} {
       visibility: visible;
     }
