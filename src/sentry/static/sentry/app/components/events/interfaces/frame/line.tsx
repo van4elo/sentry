@@ -191,7 +191,7 @@ export class Line extends React.Component<Props, State> {
             size="8px"
           />
         </ToggleContextButton>
-      </ToogleContextButtonWrapper>
+      </ToggleContextButtonWrapper>
     );
   }
 
