@@ -427,7 +427,7 @@ const ToggleContextButtonWrapper = styled('span')`
   margin-left: ${space(1)};
 `;
 
-// the Buton's label has the padding of 3px because the button size has to be 16x16 px.
+// the Button's label has the padding of 3px because the button size has to be 16x16 px.
 const ToogleContextButton = styled(Button)`
   span:first-child {
     padding: 3px;
