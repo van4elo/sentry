@@ -423,7 +423,7 @@ const StyledIconChevron = styled(IconChevron, {
   transition: 0.1s all;
 `;
 
-const ToogleContextButtonWrapper = styled('span')`
+const ToggleContextButtonWrapper = styled('span')`
   margin-left: ${space(1)};
 `;
 
