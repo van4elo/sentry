@@ -70,11 +70,11 @@ export class Line extends React.Component<Props, State> {
     registers: PropTypes.objectOf(PropTypes.string.isRequired),
     components: PropTypes.array.isRequired,
     showingAbsoluteAddress: PropTypes.bool,
-    showCompleteFunctionName: PropTypes.bool,
-    onAddressToggle: PropTypes.func,
     onFunctionNameToggle: PropTypes.func,
     image: PropTypes.object,
     maxLengthOfRelativeAddress: PropTypes.number,
+    onAddressToggle: PropTypes.func,
+    showCompleteFunctionName: PropTypes.bool,
     frameID: PropTypes.number,
   };
 
