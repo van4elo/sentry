@@ -190,7 +190,7 @@ export class Line extends React.Component<Props, State> {
             direction={isExpanded ? 'up' : 'down'}
             size="8px"
           />
-        </ToogleContextButton>
+        </ToggleContextButton>
       </ToogleContextButtonWrapper>
     );
   }
